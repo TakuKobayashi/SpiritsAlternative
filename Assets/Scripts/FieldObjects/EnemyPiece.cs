@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class EnemyPiece : PieceBase
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public EnemyPieceModel DataModel { private set; get; }
 
-    // Update is called once per frame
-    void Update()
+    public void Init(EnemyPieceModel pieceModel)
     {
-        
+        DataModel = pieceModel;
     }
 }

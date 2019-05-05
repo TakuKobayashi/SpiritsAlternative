@@ -1,17 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public abstract class PieceBase : FieldObject
+public abstract class PieceBase : MovableObject
 {
-    // Use this for initialization
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class PlayerCorps : CorpsBase<PlayerPiece>
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Init(params PlayerPieceModel[] models)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        PlayerPiece[] players = this.Appear(models.Length);
+        for (int i = 0; i < players.Length; ++i)
+        {
+            players[i].Init(models[i]);
+        }
     }
 }
